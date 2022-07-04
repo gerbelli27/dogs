@@ -10,6 +10,10 @@ const types = {
     regex: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
     message: "Minimum eight characters, at least one letter and one number",
   },
+  number: {
+    regex: /^\d+$/,
+    message: "only numbers",
+  },
 };
 
 const useForm = (type) => {
