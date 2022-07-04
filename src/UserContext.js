@@ -25,13 +25,13 @@ export const UserStorage = ({ children }) => {
       setLoading(true);
       const { url, options } = TOKEN_POST({ username, password });
       const response = await fetch(url, options);
-      if (!response.ok) throw new Error("ERROR: User not found");
+      if (!response.ok) throw new Error("Error: user not found");
       const { token } = await response.json();
       window.localStorage.setItem("token", token);
       await getUser(token);
       navigate("/account");
-    } catch (error) {
-      setError(error.message);
+    } catch (err) {
+      setError(err.message);
       setLogin(false);
     } finally {
       setLoading(false);

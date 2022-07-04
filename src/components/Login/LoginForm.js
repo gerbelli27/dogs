@@ -4,6 +4,9 @@ import useForm from "../../Hooks/useForm";
 import { UserContext } from "../../UserContext";
 import Button from "../Forms/Button";
 import Input from "../Forms/Input";
+import Error from "../Helper/Error";
+import styles from "./LoginForm.module.css";
+import stylesButton from "../Forms/Button.module.css";
 
 const LoginForm = () => {
   const username = useForm();
@@ -19,9 +22,9 @@ const LoginForm = () => {
   }
 
   return (
-    <section>
-      <h1>Form</h1>
-      <form action="" onSubmit={handleSubmit}>
+    <section className="animeLeft">
+      <h1 className="title">Login</h1>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <Input label="User" type="text" name="username" {...username} />
         <Input label="Password" type="password" name="password" {...password} />
         {loading ? (
@@ -29,10 +32,18 @@ const LoginForm = () => {
         ) : (
           <Button>Log in</Button>
         )}
-
-        {error && <p>{error}</p>}
+        <Error error={error} />
       </form>
-      <Link to="/login/register">Register</Link>
+      <Link className={styles.lost} to="/login/lost">
+        Password lost?
+      </Link>
+      <div className={styles.register}>
+        <h2 className={styles.subtitle}>Register</h2>
+        <p>Register for an account</p>
+        <Link className={stylesButton.button} to="/login/register">
+          Register
+        </Link>
+      </div>
     </section>
   );
 };
