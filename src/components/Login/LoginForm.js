@@ -39,7 +39,7 @@ const LoginForm = () => {
       </Link>
       <div className={styles.register}>
         <h2 className={styles.subtitle}>Register</h2>
-        <p>Register for an account</p>
+        <p>Get your free account</p>
         <Link className={stylesButton.button} to="/login/register">
           Register
         </Link>
