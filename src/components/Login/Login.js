@@ -7,6 +7,7 @@ import { useContext } from "react";
 import { UserContext } from "../../UserContext";
 import styles from "./Login.module.css";
 import NotFound from "../NotFound";
+import Head from "../Helper/Head";
 
 const Login = () => {
   const { login } = useContext(UserContext);
@@ -14,6 +15,7 @@ const Login = () => {
   if (login === true) return <Navigate to="/account" />;
   return (
     <section className={styles.login}>
+      <Head title="Login" />
       <div className={styles.form}>
         <Routes>
           <Route path="/" element={<LoginForm />} />
