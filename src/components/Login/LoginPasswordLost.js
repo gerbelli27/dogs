@@ -21,7 +21,7 @@ const LoginPasswordLost = () => {
   }
 
   return (
-    <section>
+    <section className="animeLeft">
       <Head title="Password lost?" />
       <h1 className="title">Lost password</h1>
       {data ? (
