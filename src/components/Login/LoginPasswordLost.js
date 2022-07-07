@@ -14,7 +14,7 @@ const LoginPasswordLost = () => {
     if (login.validate()) {
       const { url, options } = PASSWORD_LOST({
         login: login.value,
-        url: "http://localhost:3000/login/reset",
+        url: "https://gerbelli27.github.io/dogs/login/reset",
       });
       request(url, options);
     }
