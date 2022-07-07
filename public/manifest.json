@@ -1,6 +1,7 @@
 {
   "short_name": "DogsApp",
   "name": "Dogs App - All rights for your buddy",
+  "homepage": "https://gerbelli27.github.io/dogs",
   "icons": [
     {
       "src": "favicon.ico",
@@ -23,3 +24,4 @@
   "theme_color": "#fb1",
   "background_color": "#ffffff"
 }
+
