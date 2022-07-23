@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./UserStatsGraphs.module.css";
 import { VictoryPie, VictoryChart, VictoryBar } from "victory";
-import Loading from "../Helper/Loading";
 
 const UserStatsGraphs = ({ data }) => {
   const [graph, setGraph] = useState([]);

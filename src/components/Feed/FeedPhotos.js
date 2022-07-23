@@ -8,7 +8,6 @@ import styles from "./FeedPhotos.module.css";
 
 const FeedPhotos = ({ page, user, setModalPhoto, setInfinite }) => {
   const { data, loading, error, request } = useFetch();
-
   useEffect(() => {
     async function fetchPhotos() {
       const total = 6;
