@@ -14,7 +14,7 @@ import NotFound from "./components/NotFound";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <UserStorage>
           <Header />
           <main className="AppBody">
