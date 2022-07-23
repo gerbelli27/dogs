@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "DogsApp",
+  "name": "Dogs App - All rights for your buddy",
+  "homepage": "https://gerbelli27.github.io/dogs",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#fb1",
   "background_color": "#ffffff"
 }
