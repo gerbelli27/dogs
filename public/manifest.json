@@ -1,7 +1,7 @@
 {
   "short_name": "DogsApp",
   "name": "Dogs App - All rights for your buddy",
-  "homepage": "https://gerbelli27.github.io/dogs",
+  "homepage": "https://dogs-puce.vercel.app/",
   "icons": [
     {
       "src": "favicon.ico",
